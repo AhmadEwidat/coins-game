@@ -1,0 +1,108 @@
+/* General styling for all elements in the application */
+* {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-size: 20px;
+    -fx-text-fill: #34495e;
+}
+
+/* GridPane styling for layout, including background, borders, and shadows */
+.grid-pane {
+    -fx-background-color: #f4f4f9;
+    -fx-border-color: #7f8c8d;
+    -fx-border-width: 2;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.5, 0, 0);
+}
+
+/* Styling for hover effect on GridPane cells */
+.grid-pane .cell:hover {
+    -fx-background-color: #bdc3c7;
+}
+
+/* Alternating row colors for readability within the GridPane */
+.grid-pane .odd-row {
+    -fx-background-color: #ecf0f1;
+}
+
+.grid-pane .even-row {
+    -fx-background-color: #bdc3c7;
+}
+
+/* Label styling, including font size, text color, and padding */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #2C3E50;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+
+/* Button styling with background, text, padding, and shadow effect */
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.5, 0, 2);
+    -fx-cursor: hand;
+}
+
+/* Hover effect for buttons, changing background color */
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* ScrollPane styling for transparent background, borders, and padding */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: #2C3E50;
+    -fx-border-width: 2;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-padding: 10px;
+}
+
+/* Styling for semi-transparent background images */
+.image-background {
+    -fx-opacity: 0.5;
+}
+
+/* StackPane styling, including transparency and shadow effects */
+.stack-pane {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.8, 0, 0);
+    -fx-border-radius: 15px;
+}
+
+/* ScrollBar customization within a ScrollPane */
+.scroll-pane .viewport .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport .scroll-bar .thumb {
+    -fx-background-color: #3498db;
+}
+
+.scroll-pane .viewport .scroll-bar .thumb:hover {
+    -fx-background-color: #2980b9;
+}
+
+/* Styling for numbers displayed in squares, including background, padding, and alignment */
+.number-in-square {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-border-radius: 5px;
+    -fx-border-color: #2980b9;
+    -fx-border-width: 2px;
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+}
+
+/* Hover effect for clickable numbers, including background change and cursor style */
+.number-in-square:hover {
+    -fx-background-color: #2980b9;
+    -fx-cursor: hand;
+}
